@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Petition Details</title>
 </head>
 <body>
+<h1>Search Results</h1>
 
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+
+
+    <tr th:each="result : ${searchResults}">
+        <td th:text="${result.creator}">Name</td>
+        <td th:text="${result.email}">email</td>
+    </tr>
+</table>
+
+<button type="submit">Back to Petitions</button>
 </body>
 </html>
