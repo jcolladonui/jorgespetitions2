@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>View Petitions</title>
+    <title>Sign Petition Success</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,38 +11,26 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-        }
-
-        li {
-            padding: 10px;
-            margin: 5px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
         }
 
         h2 {
             color: #007bff;
             text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
         }
     </style>
 </head>
 <body>
-<h2>All Petitions</h2>
-<ul th:each="petition : ${petitions}">
-    <li th:text="${petition.title}"></li>
-</ul>
+<h2>Thank You!</h2>
+<p>Your petition has been signed successfully. Thank you for your support!</p>
 </body>
 </html>
-
 
