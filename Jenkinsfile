@@ -18,9 +18,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'mvn test'
-                sh 'git add .'
-                sh 'git commit -m "Test stage"'
-                sh 'git push origin master'
+
             }
         }
 
