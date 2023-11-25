@@ -5,7 +5,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>jorgespetitions2</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>demo</name>
     <description>Demo project for Spring Boot</description>
@@ -60,17 +60,7 @@
                     <mainClass>org.example.Main</mainClass>
                 </configuration>
             </plugin>
-            <plugin>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <mainClass>org.example.Main</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
+
         </plugins>
     </build>
 
