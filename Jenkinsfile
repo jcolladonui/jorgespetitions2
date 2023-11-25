@@ -14,14 +14,7 @@ pipeline {
 
             }
         }
-        stage ('Exec') {
-            steps {
-                sh 'mvn spring-boot:run'
-                sh 'git add .'
-                sh 'git commit -m "Exec stage"'
-                sh 'git push origin master'
-            }
-        }
+
         stage('Test') {
             steps {
                 sh 'mvn test'
