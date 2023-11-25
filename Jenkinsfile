@@ -11,7 +11,7 @@ pipeline {
                 sh 'mvn clean:clean'
                 sh 'mvn dependency:copy-dependencies'
                 sh 'git add .'
-                sh 'git push origin master'
+
             }
         }
         stage ('Exec') {
