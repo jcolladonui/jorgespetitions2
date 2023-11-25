@@ -11,7 +11,6 @@ pipeline {
                 sh 'mvn clean:clean'
                 sh 'mvn dependency:copy-dependencies'
                 sh 'git add .'
-                sh 'git commit -m "Build stage"'
                 sh 'git push origin master'
             }
         }
@@ -46,3 +45,4 @@ pipeline {
         }
     }
 }
+
